@@ -80,3 +80,34 @@ match vocal:
     case _:
         print("es una consonante")
 ```
+
+## BUCLES
+
+### La sentencia WHILE
+
+Es el primer mecanismo que existe en python para repetir instrucciones.
+La semantica tras esta sentencia es :`Mientras se cumpla la condicion has algo`.
+EJEMPLO:
+
+```python
+salir:str="N"
+while salir=="N":
+     print("Hola que tal")
+    salir=input("deseas salir (S/N): ")
+        print("Adios")
+```
+
+se puede cortar la ejecucion de un `while`haciendoel uso `break`:
+
+```python
+
+intentos = 0
+while intentos < 3:
+    respuesta = input("¿Cuánto es 5 + 5? ")
+    if respuesta == "10":
+        print("Correcto")
+        break
+    else:
+        print("Incorrecto")
+        intentos += 1
+```

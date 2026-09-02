@@ -42,3 +42,18 @@ if c < menor:
     menor = c
 
 print("El mínimo es:", menor)
+
+
+
+## usando  WHILE crea un programa que me de una pregunta para responder 
+# y que solo tenga 3 oportubidades para dar con la respuesta correcta
+
+intentos = 0
+while intentos < 3:
+    respuesta = input("¿Cuánto es 5 + 5? ")
+    if respuesta == "10":
+        print("Correcto")
+        break
+    else:
+        print("Incorrecto")
+        intentos += 1

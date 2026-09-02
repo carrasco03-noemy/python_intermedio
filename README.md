@@ -51,3 +51,32 @@ print ("nivel naranja")
 else:
     print (" nivel rojo")
 ```
+
+### SENTENCIA 
+Esta es una nueva sentencia condicional ,similar a los if anidados:
+
+```python
+vocal:str="a"
+match vocal:
+    case "a":
+        print("es una vocal")
+    case "e":
+        print("es una vocal")
+    case "i":
+        print("es una vocal")
+    case "0":
+        print("es una vocal")
+    case "u":
+        print("es una vocal")
+```
+
+una manera de hacer el codigo mas corto es :
+
+```python
+vocal:str=input("ingrese una letra: ")
+match vocal:
+    case "a"| "e"|"i"|"0"|"u":
+        print("es una vocal")
+    case _:
+        print("es una consonante")
+```
